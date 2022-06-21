@@ -1,3 +1,4 @@
+/* Changes the color of the SVG Icon/Logo */
 .filter-white{
     filter: invert(100%) sepia(1%) saturate(7494%) hue-rotate(67deg) brightness(107%) contrast(99%);
 }
