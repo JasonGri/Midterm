@@ -5,12 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--link tags for my css code and bootstrap's-->
-    <link rel="stylesheet" href="./boot/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./boot/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>My website</title>
 </head>
 <body>
-    
+    <!--Navigation Bar-->
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!--Navigation Brand-->
+            <a class="navbar-brand" href="index.html">
+                <img src="./imgs/joystick.svg" alt="joystick" width="30" height="24" class="d-inline-block align-text-top filter-white">
+                JasGames
+            </a>
+            <!--Toggler Button-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Navbar links-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="about.html">About</a>
+                  </li>
+                </ul>
+                <!-- <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
     <!--script tags for my javascript code and bootstrap's-->
     <script src="./script.js"></script>
     <script src="./boot/js/bootstrap.min.js"></script>
