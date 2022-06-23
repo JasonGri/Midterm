@@ -6,3 +6,20 @@
 .footer{
     margin-top: 150px;
 }
+
+h1 {
+    text-align: center;
+}
+
+tr {
+    color: #FFFF
+}
+
+ #td-dlt, #th-dlt{
+    text-align: center;
+}
+
+tbody tr:hover {
+    color: #000;
+    background: #FFF;
+}
