@@ -38,22 +38,22 @@ function formValidation2(title, rating, comment){
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // Toggling Sorting Icon 
     document.getElementById('title-toggle').onclick = toggleSort;
     document.getElementById('rating-toggle').onclick = toggleSort;
-
+    
     // Submission of the form
     document.querySelector('form').onsubmit = () => {
         let title = document.getElementById('title');
         let rating = document.getElementById('rating');
         let comment = document.getElementById('comment');
-
+        
         // Stop code execution if input is invalid
         if (formValidation2(title,rating,comment)===false){
             return false;
         }
-
+        
         // Create new table row
         const tr = document.createElement('tr');
         // Customize the format of the tr html code
@@ -63,17 +63,28 @@ document.addEventListener('DOMContentLoaded', () => {
         <td>${rating.value}</td>
         <td>${comment.value}</td>
         <td id="td-dlt">
-        <button type="button" class="btn btn-danger btn-sm"><img class="filter-white" src="./imgs/trash.svg" alt="trashcan" width="30" height="24"></button>
+        <button type="button" class="btn btn-danger btn-sm dlt"><img class="filter-white" src="./imgs/trash.svg" alt="trashcan" width="30" height="24"></button>
         </td>`;
         // Add the row to the table body
         document.querySelector('tbody').appendChild(tr);
+        
         // Clear form fields
         title.value = '';
         rating.value = '';
         comment.value = '';
         
+        // Delete Table Row 
+            // Gather all the delete buttons
+        var dltBtns = document.getElementsByClassName("dlt");
+
+        // When the button is clicked go to the table row of the button and delete it
+        dltBtns.forEach(
+            function(btn){btn.onclick = () =>
+            btn.parentElement.parentElement.remove();}
+        )
+
         // Stop form from submitting
         return false;
     };
-
+    
 });
