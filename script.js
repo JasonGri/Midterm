@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Delete Table Row 
             // Gather all the delete buttons
-        var dltBtns = document.getElementsByClassName("dlt");
+        const dltBtns = document.querySelectorAll(".dlt");
 
         // When the button is clicked go to the table row of the button and delete it
         dltBtns.forEach(
