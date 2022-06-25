@@ -68,17 +68,16 @@
 
     <!--Main Data Grid-->
     <div class="d-inline-flex m-5 w-50 shadow-lg">
-        <table class="table rounded-3 mb-1 bg-dark bg-gradient">
+        <table id="myTable" class="table rounded-3 mb-1 bg-dark bg-gradient">
             <thead>
             <tr>
-                <th scope="col">#</th>
                 <th scope="col">
                     Titles
-                    <button id='title-toggle' type="button" class="btn btn-sm"><img class="filter-white" src="./imgs/sort-down.svg" width="30" height="24"></button>
+                    <button id='toggle' type="button" class="btn btn-sm"><img class="filter-white" src="./imgs/sort-down.svg" width="30" height="24"></button>
                 </th>
                 <th scope="col">
                     Ratings
-                    <button id='rating-toggle' type="button" class="btn btn-sm"><img class="filter-white" src="./imgs/sort-down.svg" width="30" height="24"></button>
+                    <button id='toggle' type="button" class="btn btn-sm"><img class="filter-white" src="./imgs/sort-down.svg" width="30" height="24"></button>
                 </th>
                 <th scope="col">Comments</th>
                 <th scope="col" id="th-dlt">Remove Game</th>
@@ -86,17 +85,33 @@
             </thead>
             <tbody>
             <tr>
-                <th scope="row">1</th>
-                <td>The Last of Us</td>
-                <td>10</td>
+                <td>Y</td>
+                <td>8.1</td>
+                <td>Amazing survival game</td>
+                <td id="td-dlt"><button type="button" class="btn btn-danger btn-sm dlt"><img class="filter-white" src="./imgs/trash.svg" alt="trashcan" width="30" height="24"></button></td>
+            </tr>
+            <tr>
+                <td>Z</td>
+                <td>6</td>
                 <td>Great story game with zombies</td>
                 <td id="td-dlt"><button type="button" class="btn btn-danger btn-sm dlt"><img class="filter-white" src="./imgs/trash.svg" alt="trashcan" width="30" height="24"></button></td>
             </tr>
             <tr>
-                <th scope="row">2</th>
-                <td>The forest</td>
-                <td>8.1</td>
-                <td>Amazing survival game</td>
+                <td>B</td>
+                <td>8</td>
+                <td>Great story game with zombies</td>
+                <td id="td-dlt"><button type="button" class="btn btn-danger btn-sm dlt"><img class="filter-white" src="./imgs/trash.svg" alt="trashcan" width="30" height="24"></button></td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>3</td>
+                <td>Great story game with zombies</td>
+                <td id="td-dlt"><button type="button" class="btn btn-danger btn-sm dlt"><img class="filter-white" src="./imgs/trash.svg" alt="trashcan" width="30" height="24"></button></td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>9</td>
+                <td>Great story game with zombies</td>
                 <td id="td-dlt"><button type="button" class="btn btn-danger btn-sm dlt"><img class="filter-white" src="./imgs/trash.svg" alt="trashcan" width="30" height="24"></button></td>
             </tr>
             </tbody>

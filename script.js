@@ -1,11 +1,11 @@
 'use strict';
 
 // Changes the src path of the svg icon 
-function toggleSort(){
+function toggleSort(btn, asc){
     const sortUp = './imgs/sort-up.svg'
     const sortDown = './imgs/sort-down.svg'
-    let sortImg = this.firstChild
-    sortImg.src === 'file:///C:/Users/jason/OneDrive/Desktop/Midterm/Midterm/imgs/sort-down.svg' ? sortImg.src = sortUp : sortImg.src = sortDown;
+    let sortImg = btn.firstChild
+    asc ? sortImg.src = sortDown : sortImg.src = sortUp;
 }
 
 // Validates Input of the form, displays a message in case of error
@@ -35,13 +35,36 @@ function formValidation2(title, rating, comment){
     return isValid;
 }
 
+// Sorts table rows by column specified
+function sortTableByColumn(table, column, asc=true){
+    const dirModifier = asc ? 1:-1;
+    const tbody = table.tBodies[0];
+    const rows = Array.from(tbody.querySelectorAll('tr'));
 
+    // Sort each row
+    const sortedRows = rows.sort((a,b) => {
+        const aColText = a.querySelector(`td:nth-child(${ column + 1})`).textContent.trim();
+        const bColText = b.querySelector(`td:nth-child(${ column + 1})`).textContent.trim();
+
+        return aColText > bColText ? (1 * dirModifier) : (-1 * dirModifier);
+    })
+
+    // Remove all existing table rows from the table
+    while (tbody.firstChild) {
+        tbody.removeChild(tbody.firstChild);
+    }
+
+    // Re-add the newly sorted rows
+    tbody.append(...sortedRows);
+
+    // Remember how the column is currently sorted
+    table.querySelectorAll("th").forEach(th => th.classList.remove("th-sort-asc", "th-sort-desc"));
+    table.querySelector(`th:nth-child(${ column + 1})`).classList.toggle("th-sort-asc", asc); // if asc param is true it places the th-sort-asc class to the th element
+    table.querySelector(`th:nth-child(${ column + 1})`).classList.toggle("th-sort-desc", !asc);// if asc param is NOT true it places the th-sort-desc class to the th element
+
+}
 
 document.addEventListener('DOMContentLoaded', () => {
-
-    // Toggling Sorting Icon 
-    document.getElementById('title-toggle').onclick = toggleSort;
-    document.getElementById('rating-toggle').onclick = toggleSort;
     
     // Submission of the form
     document.querySelector('form').onsubmit = () => {
@@ -58,8 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const tr = document.createElement('tr');
         // Customize the format of the tr html code
         tr.innerHTML =
-        `<th scope="row">2</th>
-        <td>${title.value}</td>
+        `<td>${title.value}</td>
         <td>${rating.value}</td>
         <td>${comment.value}</td>
         <td id="td-dlt">
@@ -87,4 +109,16 @@ document.addEventListener('DOMContentLoaded', () => {
         return false;
     };
     
+    // Sorting 
+    document.querySelectorAll("#myTable th #toggle").forEach(btn => {
+        btn.addEventListener("click", () => {
+            const th = btn.parentElement;
+            const tableElement = th.parentElement.parentElement.parentElement;
+            const headerIndex = Array.prototype.indexOf.call(th.parentElement.children, th); // Finds the index of each table header
+            const currentIsAscending = th.classList.contains("th-sort-asc");
+    
+            sortTableByColumn(tableElement, headerIndex, !currentIsAscending);
+            toggleSort(btn, currentIsAscending);
+        });
+    });
 });
