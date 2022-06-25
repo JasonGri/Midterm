@@ -3,27 +3,39 @@
     filter: invert(100%) sepia(1%) saturate(7494%) hue-rotate(67deg) brightness(107%) contrast(99%);
 }
 
+/* creation of gap between end of body contents and footer */
 .footer{
     margin-top: 150px;
 }
 
-h1 {
-    text-align: center;
-}
-
+/* table rows text color */
 tr {
     color: #FFFF
 }
 
+/* "delete" column contents including header centered */
  #td-dlt, #th-dlt{
     text-align: center;
 }
 
+/* table rows hovering animation */
 tbody tr:hover {
     color: #000;
     background: #FFF;
 }
 
+/* Form error message color */
 #error {
     color:#DC143C;
+}
+
+/* Highlighting shape and color*/
+span {
+    background-color: #dc143cb4;
+    border-radius: 5px;
+}
+
+/* Intro messages boxes shape */
+#intro {
+    border-radius: 20px;
 }
