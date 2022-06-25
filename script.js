@@ -46,7 +46,14 @@ function sortTableByColumn(table, column, asc=true){
         const aColText = a.querySelector(`td:nth-child(${ column + 1})`).textContent.trim();
         const bColText = b.querySelector(`td:nth-child(${ column + 1})`).textContent.trim();
 
-        return aColText > bColText ? (1 * dirModifier) : (-1 * dirModifier);
+        // Checks whether column includes text or numbers to prevent issues like '10'<'9'===true or 'Z' < 'a'===true
+         if (isNaN(aColText)){
+
+            return aColText.toLowerCase() > bColText.toLowerCase() ? (1 * dirModifier) : (-1 * dirModifier);
+        } else {
+            
+            return parseFloat(aColText) > parseFloat(bColText) ? (1 * dirModifier) : (-1 * dirModifier);
+        }
     })
 
     // Remove all existing table rows from the table
@@ -104,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
             function(btn){btn.onclick = () =>
             btn.parentElement.parentElement.remove();}
         )
-
+        
         // Stop form from submitting
         return false;
     };
