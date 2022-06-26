@@ -15,7 +15,7 @@
         <div class="container-fluid">
             <!--Navigation Brand-->
             <a class="navbar-brand" href="index.html">
-                <img src="./imgs/joystick.svg" alt="joystick" width="30" height="24" class="d-inline-block align-text-top filter-white">
+                <img src="./imgs/svgIcons/joystick.svg" alt="joystick" width="30" height="24" class="d-inline-block align-text-top filter-white">
                 JasGames
             </a>
             <!--Toggler Button-->
@@ -40,7 +40,207 @@
         </div>
     </nav>
 
+    <!-- Title -->
+    <h1 class="my-4 text-center">About <span class="badge bg-dark">US</span></h1>
+
+    <!-- Separator -->
+    <hr class="text-dark border-3 opacity-50">
+    
     <!--Carousels-->
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Battle Royale Header -->
+        <div class="col-4 d-flex justify-content-center">
+          <h3 class="flex-fill display-6">Battle Royale</h3>
+        </div>
+        <!-- Play Station Exclusive Header -->
+        <div class="col-4 d-flex justify-content-center">
+          <h3 class="flex-fill display-6">Play Station Exclusive</h3>
+        </div>
+        <!-- Survival Header -->
+        <div class="col-4 d-flex justify-content-center">
+          <h3 class="flex-fill display-6">Survival</h3>
+        </div>
+
+        <div class="col-4 d-flex justify-content-center my-4">
+          <!-- Battle Royale Carousel -->
+          <div id="carousel1" class="flex-fill carousel slide carousel-fade w-25 mx-3" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./imgs/BRCarousel/apex.jpg" class="d-block w-100" alt="apex">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./imgs/BRCarousel/cod.jpg" class="d-block w-100" alt="cod">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/BRCarousel/fortnite.jpg" class="d-block w-100" alt="fortnite">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+          </div>
+        </div>
+        <div class="col-4 d-flex justify-content-center my-4">
+          <!-- Play Station Exclusive -->
+          <div id="carousel2" class="flex-fill carousel slide carousel-fade w-25 mx-3" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./imgs/PSCarousel/gow.jpg" class="d-block w-100" alt="gow">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./imgs/PSCarousel/lou.jpg" class="d-block w-100" alt="lou">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/PSCarousel/rc.jpg" class="d-block w-100" alt="rc">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+          </div>
+        </div>
+        <div class="col-4 d-flex justify-content-center my-4">
+          <!-- Survival -->
+          <div id="carousel3" class="flex-fill carousel slide carousel-fade w-25 mx-3" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./imgs/SCarousel/forest.jpg" class="d-block w-100" alt="forest">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./imgs/SCarousel/rust.jpg" class="d-block w-100" alt="rust">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/SCarousel/minecraft.jpg" class="d-block w-100" alt="minecraft">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+          </div>
+        </div>
+        <!-- Indie Header -->
+        <div class="col-4 offset-2 d-flex justify-content-center">
+          <h3 class="flex-fill display-6">Indie</h3>
+        </div>
+        <!-- Racing Header -->
+        <div class="col-4 d-flex justify-content-center">
+          <h3 class="flex-fill display-6">Racing</h3>
+        </div>
+        <div class="col-4 offset-2 d-flex justify-content-center my-4">
+          <!-- Indie -->
+          <div id="carousel4" class="flex-fill carousel slide carousel-fade w-25 mx-3" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./imgs/ICarousel/ch.jpg" class="d-block w-100" alt="ch">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./imgs/ICarousel/dc.jpg" class="d-block w-100" alt="dc">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/ICarousel/hk.jpg" class="d-block w-100" alt="hk">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+          </div>
+        </div>
+        <div class="col-4 d-flex justify-content-center my-4">
+          <!-- Racing -->
+          <div id="carousel5" class="flex-fill carousel slide carousel-fade w-25 mx-3" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./imgs/RCarousel/f1.jpeg" class="d-block w-100" alt="forest">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./imgs/RCarousel/gt.jpeg" class="d-block w-100" alt="rust">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/RCarousel/fh.jpg" class="d-block w-100" alt="minecraft">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel5" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel5" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!--Footer-->
     <div class="container footer">
@@ -49,15 +249,16 @@
           <p class="col-md-4 mb-0 text-muted">© 2022 JasGames, Inc</p>
           <!--Footer Logo-->
           <a href="index.html"class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-              <img class="d-inline-block align-text-top" src="./imgs/joystick.svg" alt="joystick" width="30" height="24">
+              <img class="d-inline-block align-text-top" src="./imgs/svgIcons/joystick.svg" alt="joystick" width="30" height="24">
           </a>
           <!--Footer Items-->
           <ul class="nav col-md-4 justify-content-end">
-              <li class="nav-item"><a href="https://github.com/JasonGri" class="nav-link px-2 text-muted"><img src="./imgs/github.svg">Github</a></li>
-              <li class="nav-item"><a href="https://l.messenger.com/l.php?u=http%3A%2F%2Fwww.linkedin.com%2Fin%2Fjason-grivas-b94b7b212&h=AT2F7xNingnQn8dT2Vw9c50RoT6ZHCdK32rqYdkaQk_7LL8UvKhxxO4cNi_u7Cb03m9AeGjm-QSG7wMDQwnR2EOfNWziVJq36A7vHFzNhSIE5ZDBe0RjuGw_1WzXMOlwEqgG0g" class="nav-link px-2 text-muted"><img src="./imgs/linkedin.svg">LinkedIn</a></li>
+              <li class="nav-item"><a href="https://github.com/JasonGri" class="nav-link px-2 text-muted"><img src="./imgs/svgIcons/github.svg">Github</a></li>
+              <li class="nav-item"><a href="https://l.messenger.com/l.php?u=http%3A%2F%2Fwww.linkedin.com%2Fin%2Fjason-grivas-b94b7b212&h=AT2F7xNingnQn8dT2Vw9c50RoT6ZHCdK32rqYdkaQk_7LL8UvKhxxO4cNi_u7Cb03m9AeGjm-QSG7wMDQwnR2EOfNWziVJq36A7vHFzNhSIE5ZDBe0RjuGw_1WzXMOlwEqgG0g" class="nav-link px-2 text-muted"><img src="./imgs/svgIcons/linkedin.svg">LinkedIn</a></li>
           </ul>
       </nav>
     </div>
+
     <!--script tags for my javascript code and bootstrap's-->
     <script src="./boot/js/bootstrap.min.js"></script>
 </body>

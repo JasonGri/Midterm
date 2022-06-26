@@ -2,8 +2,8 @@
 
 // Changes the src path of the svg icon 
 function toggleSort(btn, asc){
-    const sortUp = './imgs/sort-up.svg'
-    const sortDown = './imgs/sort-down.svg'
+    const sortUp = './imgs/svgIcons/sort-up.svg'
+    const sortDown = './imgs/svgIcons/sort-down.svg'
     let sortImg = btn.firstChild
     asc ? sortImg.src = sortDown : sortImg.src = sortUp;
 }

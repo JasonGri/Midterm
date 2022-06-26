@@ -30,7 +30,7 @@ tbody tr:hover {
 }
 
 /* Highlighting shape and color*/
-span {
+#highlight {
     background-color: #dc143cb4;
     border-radius: 5px;
 }
@@ -38,4 +38,18 @@ span {
 /* Intro messages boxes shape */
 #intro {
     border-radius: 20px;
+}
+
+.carousel {
+    border-radius: 55px 55px 55px 55px;
+    overflow: hidden;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+ }
+ 
+h1, h3{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 1%;
 }
