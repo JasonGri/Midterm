@@ -43,6 +43,11 @@
     <!-- Title -->
     <h1 class="my-4 text-center">About <span class="badge bg-dark">US</span></h1>
 
+    <!-- Introduction -->
+    <div class="lead mb-5 mx-4 px-2 fs-4 shadow-lg bg-dark text-light bg-gradient" id="intro" >
+      Welcome to the about section of the website, let us introduce ourselves. We are a team of computer science students who also happen to be video game enthusiasts! So we decided to create a small website project for people to share, rate and comment on their own personal game collections. By scrolling a little bit further you can also view a few game recommendations from our team's own game collection on the top 5 most popular game categories! Lastly, at the bottom of the page you can take a quick look on more detailed information regarding out team members. 
+    </div>
+
     <!-- Separator -->
     <hr class="text-dark border-3 opacity-50">
     
@@ -64,7 +69,7 @@
 
         <div class="col-4 d-flex justify-content-center my-4">
           <!-- Battle Royale Carousel -->
-          <div id="carousel1" class="flex-fill carousel slide carousel-fade w-25 mx-3" data-bs-ride="carousel">
+          <div id="carousel1" class="flex-fill carousel slide carousel-fade shadow-lg w-25 mx-3" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -97,7 +102,7 @@
         </div>
         <div class="col-4 d-flex justify-content-center my-4">
           <!-- Play Station Exclusive -->
-          <div id="carousel2" class="flex-fill carousel slide carousel-fade w-25 mx-3" data-bs-ride="carousel">
+          <div id="carousel2" class="flex-fill carousel slide carousel-fade shadow-lg w-25 mx-3" data-bs-ride="carousel">
 
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -131,7 +136,7 @@
         </div>
         <div class="col-4 d-flex justify-content-center my-4">
           <!-- Survival -->
-          <div id="carousel3" class="flex-fill carousel slide carousel-fade w-25 mx-3" data-bs-ride="carousel">
+          <div id="carousel3" class="flex-fill carousel slide carousel-fade shadow-lg w-25 mx-3" data-bs-ride="carousel">
 
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carousel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -173,7 +178,7 @@
         </div>
         <div class="col-4 offset-2 d-flex justify-content-center my-4">
           <!-- Indie -->
-          <div id="carousel4" class="flex-fill carousel slide carousel-fade w-25 mx-3" data-bs-ride="carousel">
+          <div id="carousel4" class="flex-fill carousel slide carousel-fade shadow-lg w-25 mx-3" data-bs-ride="carousel">
 
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carousel4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -207,7 +212,7 @@
         </div>
         <div class="col-4 d-flex justify-content-center my-4">
           <!-- Racing -->
-          <div id="carousel5" class="flex-fill carousel slide carousel-fade w-25 mx-3" data-bs-ride="carousel">
+          <div id="carousel5" class="flex-fill carousel slide carousel-fade shadow-lg w-25 mx-3" data-bs-ride="carousel">
 
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carousel5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -242,6 +247,32 @@
       </div>
     </div>
 
+    <!-- Separator -->
+    <hr class="text-dark border-3 opacity-50">
+
+    <!-- Grid Card -->
+    <div class="card bg-dark bg-gradient text-light mt-5 ms-5 p-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="./imgs/me.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Jason Grivas</h5>
+            <p class="card-text">Hello, I am Jason, I'm a 20 year old cyber security student at the American College of Greece! </p>
+            <p class="card-text text-end">
+              <div class="container-fluid d-inline-block">
+                <a href="https://github.com/JasonGri" class="link filter-white mx-1"><img src="./imgs/svgIcons/github.svg"></a>
+                <a href="https://l.messenger.com/l.php?u=http%3A%2F%2Fwww.linkedin.com%2Fin%2Fjason-grivas-b94b7b212&h=AT2F7xNingnQn8dT2Vw9c50RoT6ZHCdK32rqYdkaQk_7LL8UvKhxxO4cNi_u7Cb03m9AeGjm-QSG7wMDQwnR2EOfNWziVJq36A7vHFzNhSIE5ZDBe0RjuGw_1WzXMOlwEqgG0g" class="link filter-white mx-1"><img src="./imgs/svgIcons/linkedin.svg"></a>
+
+                <button type="button" class="btn btn-lg btn-danger ms-5" data-toggle="popover" data-bs-trigger="focus" title="Contact Information" data-bs-html="true"  data-bs-content="Email: IasonGrivas@acg.edu <br/>Mobile: (+30) 6949531056">Contact Me</button>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--Footer-->
     <div class="container footer">
       <nav class="navbar fixed-bottom navbar-expand-md navbar-light bg-light">
@@ -259,7 +290,20 @@
       </nav>
     </div>
 
-    <!--script tags for my javascript code and bootstrap's-->
-    <script src="./boot/js/bootstrap.min.js"></script>
+
+
+
+    <!-- Loading jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!--Loading bootstrap's-->
+    <script src="./boot/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Code for the popover initialization -->
+    <script>
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();
+    });
+    </script>
 </body>
 </html>

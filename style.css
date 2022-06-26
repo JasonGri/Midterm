@@ -53,3 +53,9 @@ h1, h3{
     padding-top: 2%;
     padding-bottom: 1%;
 }
+
+/* Card SVG Icons */
+.card a>img {
+    width:32px;
+    height:24px;
+}

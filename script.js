@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <td>${rating.value}</td>
         <td>${comment.value}</td>
         <td id="td-dlt">
-        <button type="button" class="btn btn-danger btn-sm dlt"><img class="filter-white" src="./imgs/trash.svg" alt="trashcan" width="30" height="24"></button>
+        <button type="button" class="btn btn-danger btn-sm dlt"><img class="filter-white" src="./imgs/svgicons/trash.svg" alt="trashcan" width="30" height="24"></button>
         </td>`;
         // Add the row to the table body
         document.querySelector('tbody').appendChild(tr);
